@@ -4,7 +4,6 @@ public class GameMain {
     System.out.println("じゃんけん...");
     int playerHand = Player.decidesPlayerHand();
     int computerHand = Computer.decidesComputerHand();
-    System.out.println("プレイヤー : " + Hand.getHandName(playerHand));
-    System.out.println("コンピュータ : " + Hand.getHandName(computerHand));
+    VictoryOrDefeat.decisionVictoryOrDefeat(computerHand, playerHand);
   }
 }
